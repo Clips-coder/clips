@@ -49,7 +49,7 @@ export default function LandingPage() {
       </section>
 
       {/* Video Slider */}
-      <section className="pt-8 pb-6 px-6">
+      <section className="pt-8 pb-8 px-6">
         <div className="w-full flex justify-center">
           <div className="w-[280px] overflow-hidden relative">
               {/* Fade gradients on sides */}
@@ -136,6 +136,120 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
+      </section>
+
+      {/* Trusted by the best - Logo Slider */}
+      <section className="pt-8 pb-20 px-6 bg-gray-950">
+        <div className="w-full flex justify-center">
+          <div className="w-[280px] overflow-hidden">
+            <h2 className="text-center text-gray-400 text-sm mb-10">Trusted by the best</h2>
+            <div className="flex gap-12 items-center animate-scroll-logos">
+              {/* Logo 1 */}
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">COLUMBIA</div>
+              
+              {/* Logo 2 */}
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">EPIC GAMES</div>
+              
+              {/* Logo 3 */}
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">Google</div>
+              
+              {/* Logo 4 */}
+              <div className="flex-shrink-0 w-10 h-10 border border-gray-600 rounded flex items-center justify-center text-gray-400 text-xs">i</div>
+              
+              {/* Logo 5 */}
+              <div className="flex-shrink-0 text-gray-400 text-xs font-semibold whitespace-nowrap">SATURDAY NIGHT LIVE</div>
+              
+              {/* Logo 6 */}
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">SONY</div>
+
+              {/* Duplicate set for seamless scroll */}
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">COLUMBIA</div>
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">EPIC GAMES</div>
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">Google</div>
+              <div className="flex-shrink-0 w-10 h-10 border border-gray-600 rounded flex items-center justify-center text-gray-400 text-xs">i</div>
+              <div className="flex-shrink-0 text-gray-400 text-xs font-semibold whitespace-nowrap">SATURDAY NIGHT LIVE</div>
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">SONY</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Welcome Section */}
+      <section className="py-20 px-6 bg-gray-950">
+        <div className="max-w-6xl mx-auto">
+          {/* Hero */}
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white">
+              Welcome to the easiest way to make money on the internet.
+            </h2>
+            <p className="text-xl text-gray-400">
+              Make money in under 10 clicks.
+            </p>
+          </div>
+
+          {/* Features/Process Section - Two Columns */}
+          <div className="grid md:grid-cols-2 gap-12 mb-20">
+            {/* Left Column */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                  Brand launches campaign <ArrowRight className="w-6 h-6" />
+                </h3>
+                <p className="text-gray-400">
+                  Upload content, set goals and pay structure. Distribution, tracking, and payouts are fully automated.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                  Views are tracked <ArrowRight className="w-6 h-6" />
+                </h3>
+                <p className="text-gray-400">
+                  The platform tracks views and engagement in real time. Brands only pay for results.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                  Creators submit clips <ArrowRight className="w-6 h-6" />
+                </h3>
+                <p className="text-gray-400">
+                  Creators browse campaigns and post content across TikTok, Instagram Reels, and YouTube Shorts.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                  Creators get paid <ArrowRight className="w-6 h-6" />
+                </h3>
+                <p className="text-gray-400">
+                  Earn $1.00 per 1,000 views ($100 per 100K views). No follower minimum required.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Statistics Section - Four Columns */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">10+ Billion</div>
+              <div className="text-gray-400 text-sm">Organic views generated.</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">100+</div>
+              <div className="text-gray-400 text-sm">Campaigns launched.</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">20K+</div>
+              <div className="text-gray-400 text-sm">Clippers strong.</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">93%</div>
+              <div className="text-gray-400 text-sm">Of clippers make money within the first 24 hours.</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Earnings Example */}
