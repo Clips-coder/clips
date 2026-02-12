@@ -47,8 +47,8 @@ export default function LandingPage() {
           </div>
 
           {/* Video Slider */}
-          <div className="w-full flex justify-center mt-12">
-            <div className="w-[680px] overflow-hidden relative">
+          <div className="w-full flex justify-center mt-12 mb-32">
+            <div className="w-[520px] overflow-hidden relative">
               {/* Fade gradients on sides */}
               <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
               <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-950 to-transparent z-10 pointer-events-none"></div>
