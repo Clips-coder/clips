@@ -60,7 +60,7 @@ export default function LandingPage() {
                 {/* Video 1 - Partially visible left with fade */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
                   <img
-                    src="/placeholder-video-1.jpg"
+                    src="https://picsum.photos/160/240?random=1"
                     alt="Video 1"
                     className="w-full h-full object-cover grayscale-[0.3]"
                   />
@@ -71,7 +71,7 @@ export default function LandingPage() {
                 {/* Video 2 - Fully visible */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <img
-                    src="/placeholder-video-2.jpg"
+                    src="https://picsum.photos/160/240?random=2"
                     alt="Video 2"
                     className="w-full h-full object-cover"
                   />
@@ -80,7 +80,7 @@ export default function LandingPage() {
                 {/* Video 3 - Fully visible */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <img
-                    src="/placeholder-video-3.jpg"
+                    src="https://picsum.photos/160/240?random=3"
                     alt="Video 3"
                     className="w-full h-full object-cover"
                   />
@@ -89,7 +89,7 @@ export default function LandingPage() {
                 {/* Video 4 - Partially visible right with fade */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
                   <img
-                    src="/placeholder-video-4.jpg"
+                    src="https://picsum.photos/160/240?random=4"
                     alt="Video 4"
                     className="w-full h-full object-cover grayscale-[0.3]"
                   />
@@ -100,7 +100,7 @@ export default function LandingPage() {
                 {/* Duplicate set for seamless scroll */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
                   <img
-                    src="/placeholder-video-1.jpg"
+                    src="https://picsum.photos/160/240?random=1"
                     alt="Video 1"
                     className="w-full h-full object-cover grayscale-[0.3]"
                   />
@@ -110,7 +110,7 @@ export default function LandingPage() {
 
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <img
-                    src="/placeholder-video-2.jpg"
+                    src="https://picsum.photos/160/240?random=2"
                     alt="Video 2"
                     className="w-full h-full object-cover"
                   />
@@ -118,7 +118,7 @@ export default function LandingPage() {
 
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <img
-                    src="/placeholder-video-3.jpg"
+                    src="https://picsum.photos/160/240?random=3"
                     alt="Video 3"
                     className="w-full h-full object-cover"
                   />
@@ -126,7 +126,7 @@ export default function LandingPage() {
 
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
                   <img
-                    src="/placeholder-video-4.jpg"
+                    src="https://picsum.photos/160/240?random=4"
                     alt="Video 4"
                     className="w-full h-full object-cover grayscale-[0.3]"
                   />
