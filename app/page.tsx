@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, TrendingUp, Users, Zap } from "lucide-react";
+import { ArrowRight, TrendingUp, Users, Zap, DollarSign } from "lucide-react";
 
 export default function LandingPage() {
   return (
