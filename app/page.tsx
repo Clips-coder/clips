@@ -1,31 +1,45 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, TrendingUp, Users, Zap, DollarSign } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function LandingPage() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-950">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-gray-950/95 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <header className={`fixed top-0 w-full z-50 bg-gray-950/95 backdrop-blur-md transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
+        <div className={`max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-300 ${isScrolled ? 'max-w-5xl' : 'max-w-7xl'}`}>
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-              <div className="w-5 h-5 border-2 border-white rounded-sm transform rotate-45"></div>
+          <div className={`flex items-center gap-2 transition-all duration-300 ${isScrolled ? 'gap-1.5' : 'gap-2'}`}>
+            <div className={`bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center transition-all duration-300 ${isScrolled ? 'w-6 h-6' : 'w-8 h-8'}`}>
+              <div className={`border-2 border-white rounded-sm transform rotate-45 transition-all duration-300 ${isScrolled ? 'w-3 h-3' : 'w-5 h-5'}`}></div>
             </div>
-            <span className="text-xl font-semibold text-white">Clippable</span>
+            <span className={`font-semibold text-white transition-all duration-300 ${isScrolled ? 'text-base' : 'text-xl'}`}>Clippable</span>
           </div>
 
           {/* Navigation - Center */}
-          <nav className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">For Creators</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">For Brands</a>
+          <nav className={`hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2 transition-all duration-300 ${isScrolled ? 'gap-4' : 'gap-8'}`}>
+            <a href="#" className={`text-gray-400 hover:text-white transition-colors ${isScrolled ? 'text-sm' : ''}`}>For Creators</a>
+            <a href="#" className={`text-gray-400 hover:text-white transition-colors ${isScrolled ? 'text-sm' : ''}`}>For Brands</a>
           </nav>
 
           {/* Actions - Right */}
-          <div className="flex items-center gap-4">
-            <button className="text-gray-400 hover:text-white transition-colors">Log In</button>
-            <button className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+          <div className={`flex items-center transition-all duration-300 ${isScrolled ? 'gap-2' : 'gap-4'}`}>
+            <button className={`text-gray-400 hover:text-white transition-colors ${isScrolled ? 'text-sm' : ''}`}>Log In</button>
+            <button className={`bg-white text-black rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 ${isScrolled ? 'px-4 py-1.5 text-sm' : 'px-6 py-2'}`}>
               Sign Up
             </button>
           </div>
