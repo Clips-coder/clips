@@ -6,15 +6,28 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-950">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-gray-950/80 backdrop-blur-sm border-b border-gray-800">
+      <header className="fixed top-0 w-full z-50 bg-gray-950/95 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-black rounded"></div>
-            <span className="text-xl font-bold">Clips</span>
+            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
+              <div className="w-5 h-5 border-2 border-white rounded-sm transform rotate-45"></div>
+            </div>
+            <span className="text-xl font-semibold text-white">Clippable</span>
           </div>
+
+          {/* Navigation - Center */}
+          <nav className="hidden md:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">For Creators</a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">For Brands</a>
+          </nav>
+
+          {/* Actions - Right */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost">Sign in</Button>
-            <Button>Get Started</Button>
+            <button className="text-gray-400 hover:text-white transition-colors">Log In</button>
+            <button className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+              Sign Up
+            </button>
           </div>
         </div>
       </header>
