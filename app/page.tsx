@@ -1,0 +1,102 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight, TrendingUp, Users, Zap } from "lucide-react";
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-gray-950">
+      {/* Header */}
+      <header className="fixed top-0 w-full z-50 bg-gray-950/80 backdrop-blur-sm border-b border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-black rounded"></div>
+            <span className="text-xl font-bold">Clips</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <Button variant="ghost">Sign in</Button>
+            <Button>Get Started</Button>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+            Turn Views Into Revenue
+          </h1>
+          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+            Join the modern clipping marketplace connecting creators and brands. Earn money by posting content, or launch campaigns to reach millions.
+          </p>
+          <div className="flex gap-4 justify-center">
+            <Button size="lg">Start as Creator</Button>
+            <Button variant="outline" size="lg">Launch a Campaign</Button>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-20 px-6 bg-gray-900/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">How It Works</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: Zap, title: "Browse Campaigns", desc: "Find campaigns that match your niche" },
+              { icon: TrendingUp, title: "Submit Content", desc: "Post clips and earn per view" },
+              { icon: DollarSign, title: "Get Paid", desc: "Withdraw earnings instantly" },
+            ].map((step, i) => {
+              const Icon = step.icon;
+              return (
+                <Card key={i}>
+                  <CardContent className="p-6 text-center">
+                    <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                      <Icon className="w-6 h-6 text-purple-400" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                    <p className="text-gray-400">{step.desc}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Earnings Example */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Earn Based on Performance</h2>
+          <p className="text-xl text-gray-400 mb-8">
+            $0.5 per 1,000 views. No follower minimum required.
+          </p>
+          <Card>
+            <CardContent className="p-8">
+              <div className="text-5xl font-bold mb-2">$500</div>
+              <div className="text-gray-400">for 1M views</div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 px-6 bg-gradient-to-r from-purple-600/20 to-blue-600/20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Start?</h2>
+          <p className="text-xl text-gray-400 mb-8">
+            Join thousands of creators earning on Clips
+          </p>
+          <Button size="lg">
+            Get Started <ArrowRight className="w-5 h-5 ml-2" />
+          </Button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-6 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto text-center text-gray-400">
+          © 2026 Clips. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
+}
