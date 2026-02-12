@@ -41,9 +41,97 @@ export default function LandingPage() {
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
             Join the modern clipping marketplace connecting creators and brands. Earn money by posting content, or launch campaigns to reach millions.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center mb-16">
             <Button size="lg">Start as Creator</Button>
             <Button variant="outline" size="lg">Launch a Campaign</Button>
+          </div>
+
+          {/* Video Slider */}
+          <div className="w-full flex justify-center mt-12">
+            <div className="w-[700px] overflow-hidden relative">
+              <div className="flex gap-4 animate-scroll-right">
+                {/* Video 1 - Partially visible left */}
+                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">Stranger Things</div>
+                    <div className="text-white/80 text-xs mt-1">Volume 2</div>
+                  </div>
+                </div>
+
+                {/* Video 2 - Fully visible */}
+                <div className="min-w-[320px] h-[500px] bg-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-black"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">CLIPS THAT MADE KAI FAMOUS</div>
+                    <div className="text-white/80 text-xs mt-1">105583/105000</div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="text-white font-semibold text-sm">HAVE THAT FRONT</div>
+                  </div>
+                </div>
+
+                {/* Video 3 - Fully visible */}
+                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-amber-900 to-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-amber-800/60 to-gray-900/80"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">Know Before You Go</div>
+                    <div className="text-white/80 text-xs mt-1">DOHA, QATAR</div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="text-white font-semibold text-sm">IF YOU'RE WANTING</div>
+                  </div>
+                </div>
+
+                {/* Video 4 - Partially visible right */}
+                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">This might be</div>
+                    <div className="text-white/80 text-xs mt-1">the best season</div>
+                  </div>
+                </div>
+
+                {/* Duplicate set for seamless scroll */}
+                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">Stranger Things</div>
+                    <div className="text-white/80 text-xs mt-1">Volume 2</div>
+                  </div>
+                </div>
+
+                <div className="min-w-[320px] h-[500px] bg-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-black"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">CLIPS THAT MADE KAI FAMOUS</div>
+                    <div className="text-white/80 text-xs mt-1">105583/105000</div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="text-white font-semibold text-sm">HAVE THAT FRONT</div>
+                  </div>
+                </div>
+
+                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-amber-900 to-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-amber-800/60 to-gray-900/80"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">Know Before You Go</div>
+                    <div className="text-white/80 text-xs mt-1">DOHA, QATAR</div>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="text-white font-semibold text-sm">IF YOU'RE WANTING</div>
+                  </div>
+                </div>
+
+                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute top-4 left-4 right-4">
+                    <div className="text-white font-bold text-sm">This might be</div>
+                    <div className="text-white/80 text-xs mt-1">the best season</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
