@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, TrendingUp, Users, Zap, DollarSign } from "lucide-react";
+import { ArrowRight, TrendingUp, Users, Zap, DollarSign, Target, FileVideo, BarChart3 } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -199,12 +199,24 @@ export default function LandingPage() {
       {/* How it works */}
       <section className="py-20 px-6 bg-gray-900/50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">How It Works</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">How it works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Zap, title: "Browse Campaigns", desc: "Find campaigns that match your niche" },
-              { icon: TrendingUp, title: "Submit Content", desc: "Post clips and earn per view" },
-              { icon: DollarSign, title: "Get Paid", desc: "Withdraw earnings instantly" },
+              { 
+                icon: Target, 
+                title: "Create a campaign", 
+                desc: "Set your budget, CPM, and guidelines. Launch in minutes." 
+              },
+              { 
+                icon: FileVideo, 
+                title: "Creators submit clips", 
+                desc: "Creators browse and submit clips that match your brand." 
+              },
+              { 
+                icon: BarChart3, 
+                title: "Track & pay", 
+                desc: "We track views and automatically pay creators based on performance." 
+              },
             ].map((step, i) => {
               const Icon = step.icon;
               return (
