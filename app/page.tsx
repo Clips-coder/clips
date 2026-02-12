@@ -41,13 +41,13 @@ export default function LandingPage() {
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
             Join the modern clipping marketplace connecting creators and brands. Earn money by posting content, or launch campaigns to reach millions.
           </p>
-          <div className="flex gap-4 justify-center mb-4">
+          <div className="flex gap-4 justify-center mb-6">
             <Button size="lg">Start as Creator</Button>
             <Button variant="outline" size="lg">Launch a Campaign</Button>
           </div>
 
           {/* Video Slider */}
-          <div className="w-full flex justify-center pt-0 pb-4">
+          <div className="w-full flex justify-center pt-0 pb-6">
             <div className="w-[520px] overflow-hidden relative">
               {/* Fade gradients on sides */}
               <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
@@ -145,7 +145,7 @@ export default function LandingPage() {
       </section>
 
       {/* Trusted by the best - Logo Slider */}
-      <section className="pt-4 pb-20 px-6 bg-gray-950">
+      <section className="pt-6 pb-20 px-6 bg-gray-950">
         <div className="w-full flex justify-center">
           <div className="w-[520px] overflow-hidden">
             <h2 className="text-center text-gray-400 text-sm mb-10">Trusted by the best</h2>
