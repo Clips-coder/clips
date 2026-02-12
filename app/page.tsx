@@ -48,11 +48,16 @@ export default function LandingPage() {
 
           {/* Video Slider */}
           <div className="w-full flex justify-center mt-12">
-            <div className="w-[700px] overflow-hidden relative">
+            <div className="w-[680px] overflow-hidden relative">
+              {/* Fade gradients on sides */}
+              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-950 to-transparent z-10 pointer-events-none"></div>
+              
               <div className="flex gap-4 animate-scroll-right">
-                {/* Video 1 - Partially visible left */}
-                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                {/* Video 1 - Partially visible left with fade */}
+                <div className="min-w-[300px] h-[450px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-gray-950/90 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">Stranger Things</div>
                     <div className="text-white/80 text-xs mt-1">Volume 2</div>
@@ -60,7 +65,7 @@ export default function LandingPage() {
                 </div>
 
                 {/* Video 2 - Fully visible */}
-                <div className="min-w-[320px] h-[500px] bg-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                <div className="min-w-[300px] h-[450px] bg-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-black"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">CLIPS THAT MADE KAI FAMOUS</div>
@@ -72,7 +77,7 @@ export default function LandingPage() {
                 </div>
 
                 {/* Video 3 - Fully visible */}
-                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-amber-900 to-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                <div className="min-w-[300px] h-[450px] bg-gradient-to-b from-amber-900 to-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <div className="absolute inset-0 bg-gradient-to-b from-amber-800/60 to-gray-900/80"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">Know Before You Go</div>
@@ -83,9 +88,10 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                {/* Video 4 - Partially visible right */}
-                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                {/* Video 4 - Partially visible right with fade */}
+                <div className="min-w-[300px] h-[450px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-gray-950/90 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">This might be</div>
                     <div className="text-white/80 text-xs mt-1">the best season</div>
@@ -93,15 +99,16 @@ export default function LandingPage() {
                 </div>
 
                 {/* Duplicate set for seamless scroll */}
-                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                <div className="min-w-[300px] h-[450px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-gray-950/90 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">Stranger Things</div>
                     <div className="text-white/80 text-xs mt-1">Volume 2</div>
                   </div>
                 </div>
 
-                <div className="min-w-[320px] h-[500px] bg-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                <div className="min-w-[300px] h-[450px] bg-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-black"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">CLIPS THAT MADE KAI FAMOUS</div>
@@ -112,7 +119,7 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-amber-900 to-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative">
+                <div className="min-w-[300px] h-[450px] bg-gradient-to-b from-amber-900 to-gray-900 rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <div className="absolute inset-0 bg-gradient-to-b from-amber-800/60 to-gray-900/80"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">Know Before You Go</div>
@@ -123,8 +130,9 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                <div className="min-w-[320px] h-[500px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative">
+                <div className="min-w-[300px] h-[450px] bg-gradient-to-b from-gray-800 to-black rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-700/80 to-black/80"></div>
+                  <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-gray-950/90 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
                     <div className="text-white font-bold text-sm">This might be</div>
                     <div className="text-white/80 text-xs mt-1">the best season</div>
