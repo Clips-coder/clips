@@ -51,14 +51,14 @@ export default function LandingPage() {
       {/* Video Slider */}
       <section className="pt-8 pb-6 px-6">
         <div className="w-full flex justify-center">
-          <div className="w-[640px] overflow-hidden relative">
+          <div className="w-[280px] overflow-hidden relative">
               {/* Fade gradients on sides */}
-              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
-              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-950 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-gray-950 to-transparent z-10 pointer-events-none"></div>
               
               <div className="flex gap-3 animate-scroll-right">
                 {/* Video 1 - Partially visible left with fade */}
-                <div className="min-w-[180px] h-[320px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
+                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
                   <iframe
                     className="w-full h-full grayscale-[0.3]"
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ"
@@ -71,7 +71,7 @@ export default function LandingPage() {
                 </div>
 
                 {/* Video 2 - Fully visible */}
-                <div className="min-w-[180px] h-[320px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
+                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <iframe
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/jNQXAC9IVRw?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1&playlist=jNQXAC9IVRw"
