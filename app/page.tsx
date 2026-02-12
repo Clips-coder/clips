@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, TrendingUp, Users, Zap, DollarSign, Home, BarChart3, Link2, Wallet, Search, Star, Share2 } from "lucide-react";
+import { ArrowRight, TrendingUp, Users, Zap, DollarSign } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -238,160 +238,17 @@ export default function LandingPage() {
       {/* Dashboard Preview Section */}
       <section className="py-20 px-6 bg-gray-900/50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Left Section - Dashboard */}
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Adam returns! What campaign should we clip for today?</h3>
-              
-              {/* Stats Cards Grid */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <Card>
-                  <CardContent className="p-4">
-                    <div className="text-gray-400 text-sm mb-1">Total Earnings</div>
-                    <div className="text-3xl font-bold text-white">$189.10</div>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <div className="text-gray-400 text-sm mb-1">Total Views</div>
-                    <div className="text-3xl font-bold text-white">75.4K</div>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <div className="text-gray-400 text-sm mb-1">Clips Submitted</div>
-                    <div className="text-3xl font-bold text-white">11</div>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardContent className="p-4">
-                    <div className="text-gray-400 text-sm mb-1">Weekly Bonus</div>
-                    <div className="text-xl font-bold text-white mb-1">50K views = $10</div>
-                    <div className="text-xs text-gray-500">New bonus every Monday</div>
-                  </CardContent>
-                </Card>
-              </div>
-
-              {/* Filters */}
-              <div className="space-y-4 mb-6">
-                <div className="flex gap-2">
-                  <button className="px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-semibold">All</button>
-                  <button className="px-4 py-2 bg-gray-800 text-gray-400 rounded-full text-sm">New</button>
-                  <button className="px-4 py-2 bg-gray-800 text-gray-400 rounded-full text-sm">Highest Paying</button>
-                </div>
-                <div className="flex items-center gap-4 flex-wrap">
-                  <span className="text-gray-400 text-sm">Platforms:</span>
-                  <button className="px-3 py-1 bg-purple-600 text-white rounded-full text-xs">All</button>
-                  <button className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs">TikTok</button>
-                  <button className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs">Instagram</button>
-                  <button className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs">YouTube</button>
-                </div>
-                <div className="flex items-center gap-4 flex-wrap">
-                  <span className="text-gray-400 text-sm">Type:</span>
-                  <button className="px-3 py-1 bg-purple-600 text-white rounded-full text-xs">All Types</button>
-                  <button className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs">UGC</button>
-                  <button className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs">Sound Seeding</button>
-                  <button className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs">Clips Provided</button>
-                  <button className="px-3 py-1 bg-gray-800 text-gray-400 rounded-full text-xs">Other</button>
-                </div>
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Search campaigns..."
-                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-2 pr-10 text-white placeholder-gray-500"
-                  />
-                  <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                </div>
-              </div>
-
-              {/* Campaign Cards */}
-              <div className="flex gap-4 overflow-x-auto pb-4">
-                <Card className="min-w-[280px]">
-                  <CardContent className="p-0">
-                    <div className="relative">
-                      <img
-                        src="https://picsum.photos/280/200?random=10"
-                        alt="Campaign"
-                        className="w-full h-48 object-cover rounded-t-lg"
-                      />
-                      <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">
-                        $1.00 / 1K
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h4 className="text-lg font-bold text-white mb-2">Clip Marty Supreme</h4>
-                      <div className="text-sm text-gray-400 mb-3">$1.00 / 1K views</div>
-                      <div className="mb-3">
-                        <div className="flex justify-between text-xs text-gray-400 mb-1">
-                          <span>Budget</span>
-                          <span>$9.1K / $10.0K</span>
-                        </div>
-                        <div className="w-full bg-gray-700 rounded-full h-2">
-                          <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '91%' }}></div>
-                        </div>
-                      </div>
-                      <div className="flex gap-2 mb-3 flex-wrap">
-                        <span className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded">Tiktok</span>
-                        <span className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded">UGC</span>
-                      </div>
-                      <div className="flex items-center gap-1 mb-3">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                        <span className="text-xs text-gray-400 ml-1">(2)</span>
-                      </div>
-                      <button className="w-full bg-gray-800 text-white py-2 rounded-lg flex items-center justify-center gap-2 text-sm font-semibold hover:bg-gray-700 transition-colors">
-                        View & Submit <ArrowRight className="w-4 h-4" />
-                      </button>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="min-w-[280px]">
-                  <CardContent className="p-0">
-                    <div className="relative">
-                      <img
-                        src="https://picsum.photos/280/200?random=11"
-                        alt="Campaign"
-                        className="w-full h-48 object-cover rounded-t-lg"
-                      />
-                      <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">
-                        $3.00 / 1K
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h4 className="text-lg font-bold text-white mb-2">Clip Fresco Trey</h4>
-                      <div className="text-sm text-gray-400 mb-3">$3.00 / 1K views</div>
-                      <div className="mb-3">
-                        <div className="flex justify-between text-xs text-gray-400 mb-1">
-                          <span>Budget</span>
-                          <span>$18.63 / $500</span>
-                        </div>
-                        <div className="w-full bg-gray-700 rounded-full h-2">
-                          <div className="bg-green-500 h-2 rounded-full" style={{ width: '3.7%' }}></div>
-                        </div>
-                      </div>
-                      <div className="flex gap-2 mb-3 flex-wrap">
-                        <span className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded">Tiktok</span>
-                        <span className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded">Instagram</span>
-                        <span className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded">Sound Seeding</span>
-                      </div>
-                      <div className="flex items-center gap-1 mb-3">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                        <span className="text-xs text-gray-400 ml-1">(1)</span>
-                      </div>
-                      <button className="w-full bg-gray-800 text-white py-2 rounded-lg flex items-center justify-center gap-2 text-sm font-semibold hover:bg-gray-700 transition-colors">
-                        View & Submit <ArrowRight className="w-4 h-4" />
-                      </button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Section - Image */}
+            <div className="rounded-xl overflow-hidden shadow-2xl">
+              <img
+                src="https://picsum.photos/800/600?random=20"
+                alt="Clippable Dashboard"
+                className="w-full h-auto object-cover"
+              />
             </div>
 
-            {/* Right Section - Info */}
+            {/* Right Section - Text */}
             <div>
               <h2 className="text-4xl font-bold text-white mb-6">Clippable For Clippers</h2>
               
