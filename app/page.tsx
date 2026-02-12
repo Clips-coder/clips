@@ -33,7 +33,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-0 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
             Turn Views Into Revenue
@@ -47,7 +47,7 @@ export default function LandingPage() {
           </div>
 
           {/* Video Slider */}
-          <div className="w-full flex justify-center mb-0">
+          <div className="w-full flex justify-center pb-8">
             <div className="w-[520px] overflow-hidden relative">
               {/* Fade gradients on sides */}
               <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
@@ -145,7 +145,7 @@ export default function LandingPage() {
       </section>
 
       {/* Trusted by the best - Logo Slider */}
-      <section className="pt-8 pb-20 px-6 bg-gray-950 -mt-8">
+      <section className="pt-0 pb-20 px-6 bg-gray-950">
         <div className="w-full flex justify-center">
           <div className="w-[520px] overflow-hidden">
             <h2 className="text-center text-gray-400 text-sm mb-10">Trusted by the best</h2>
