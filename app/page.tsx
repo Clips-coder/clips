@@ -295,6 +295,58 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Brands Section - Text Left, Image Right */}
+      <section className="py-20 px-6 bg-gray-950">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Section - Text */}
+            <div>
+              <div className="flex gap-2 mb-6 flex-wrap">
+                <span className="px-4 py-2 border border-purple-500 text-purple-400 rounded-full text-sm">Real-time analytics</span>
+                <span className="px-4 py-2 border border-purple-500 text-purple-400 rounded-full text-sm">20k+ creators</span>
+                <span className="px-4 py-2 border border-purple-500 text-purple-400 rounded-full text-sm">Pay for results only</span>
+              </div>
+
+              <h2 className="text-4xl font-bold text-white mb-6">Clippable For Brands</h2>
+
+              <div className="space-y-6 mb-8">
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Performance-Based Campaigns:</h3>
+                  <p className="text-gray-400">
+                    Set up campaigns with goals like views and engagement. You only pay for results, not impressions. Track performance in real time and optimize your campaigns based on data.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Distribute Everywhere:</h3>
+                  <p className="text-gray-400">
+                    Your content gets distributed across TikTok, Instagram Reels, and YouTube Shorts through thousands of creators. Maximize your reach and get your brand seen by millions.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">Real-Time Analytics:</h3>
+                  <p className="text-gray-400">
+                    Track your campaign performance, views, engagement, and creator performance all in one dashboard. Make data-driven decisions and see ROI in real time.
+                  </p>
+                </div>
+              </div>
+
+              <Button size="lg" className="bg-purple-600 hover:bg-purple-700">
+                Go Viral Now
+              </Button>
+            </div>
+
+            {/* Right Section - Image */}
+            <div className="order-first lg:order-last">
+              <img
+                src="https://picsum.photos/800/600?random=21"
+                alt="Clippable Analytics Dashboard"
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Earnings Example */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
