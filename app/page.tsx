@@ -145,48 +145,48 @@ export default function LandingPage() {
       </section>
 
       {/* Trusted by the best - Logo Slider */}
-      <section className="py-16 px-6 bg-gray-950">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-center text-gray-400 text-sm mb-8">Trusted by the best</h2>
-          <div className="w-full overflow-hidden">
-            <div className="flex gap-12 items-center justify-center animate-scroll-logos">
+      <section className="py-20 px-6 bg-gray-950">
+        <div className="w-full flex justify-center">
+          <div className="w-[520px] overflow-hidden">
+            <h2 className="text-center text-gray-400 text-sm mb-10">Trusted by the best</h2>
+            <div className="flex gap-16 items-center animate-scroll-logos">
               {/* Logo 1 */}
-              <div className="flex-shrink-0 text-gray-400 text-lg font-semibold">EPIC GAMES</div>
+              <div className="flex-shrink-0 text-gray-400 text-base font-semibold whitespace-nowrap">EPIC GAMES</div>
               
               {/* Logo 2 */}
-              <div className="flex-shrink-0 text-gray-400 text-lg font-semibold">Google</div>
+              <div className="flex-shrink-0 text-gray-400 text-base font-semibold whitespace-nowrap">Google</div>
               
               {/* Logo 3 */}
-              <div className="flex-shrink-0 w-12 h-12 border border-gray-600 rounded flex items-center justify-center text-gray-400 text-xs">1</div>
+              <div className="flex-shrink-0 w-10 h-10 border border-gray-600 rounded flex items-center justify-center text-gray-400 text-xs">1</div>
               
               {/* Logo 4 */}
-              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold">SATURDAY LIVE NIGHT</div>
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">SATURDAY LIVE NIGHT</div>
               
               {/* Logo 5 */}
-              <div className="flex-shrink-0 text-gray-400 text-lg font-semibold">SONY</div>
+              <div className="flex-shrink-0 text-gray-400 text-base font-semibold whitespace-nowrap">SONY</div>
               
               {/* Logo 6 */}
               <div className="flex-shrink-0 flex flex-col items-center">
-                <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center mb-1">
-                  <div className="w-6 h-6 border border-gray-500 rounded-full"></div>
+                <div className="w-8 h-8 border border-gray-600 rounded-full flex items-center justify-center mb-1">
+                  <div className="w-5 h-5 border border-gray-500 rounded-full"></div>
                 </div>
-                <div className="text-gray-400 text-xs text-center">
+                <div className="text-gray-400 text-xs text-center whitespace-nowrap">
                   <div>UNIVERSAL</div>
                   <div className="text-[10px]">MUSIC GROUP</div>
                 </div>
               </div>
 
               {/* Duplicate set for seamless scroll */}
-              <div className="flex-shrink-0 text-gray-400 text-lg font-semibold">EPIC GAMES</div>
-              <div className="flex-shrink-0 text-gray-400 text-lg font-semibold">Google</div>
-              <div className="flex-shrink-0 w-12 h-12 border border-gray-600 rounded flex items-center justify-center text-gray-400 text-xs">1</div>
-              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold">SATURDAY LIVE NIGHT</div>
-              <div className="flex-shrink-0 text-gray-400 text-lg font-semibold">SONY</div>
+              <div className="flex-shrink-0 text-gray-400 text-base font-semibold whitespace-nowrap">EPIC GAMES</div>
+              <div className="flex-shrink-0 text-gray-400 text-base font-semibold whitespace-nowrap">Google</div>
+              <div className="flex-shrink-0 w-10 h-10 border border-gray-600 rounded flex items-center justify-center text-gray-400 text-xs">1</div>
+              <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">SATURDAY LIVE NIGHT</div>
+              <div className="flex-shrink-0 text-gray-400 text-base font-semibold whitespace-nowrap">SONY</div>
               <div className="flex-shrink-0 flex flex-col items-center">
-                <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center mb-1">
-                  <div className="w-6 h-6 border border-gray-500 rounded-full"></div>
+                <div className="w-8 h-8 border border-gray-600 rounded-full flex items-center justify-center mb-1">
+                  <div className="w-5 h-5 border border-gray-500 rounded-full"></div>
                 </div>
-                <div className="text-gray-400 text-xs text-center">
+                <div className="text-gray-400 text-xs text-center whitespace-nowrap">
                   <div>UNIVERSAL</div>
                   <div className="text-[10px]">MUSIC GROUP</div>
                 </div>
