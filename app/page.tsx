@@ -58,7 +58,7 @@ export default function LandingPage() {
               
               <div className="flex gap-4 animate-scroll-right">
                 {/* Video 1 - Partially visible left with fade */}
-                <div className="min-w-[300px] h-[450px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
+                <div className="min-w-[240px] h-[360px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
                   <iframe
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
@@ -104,7 +104,7 @@ export default function LandingPage() {
                 </div>
 
                 {/* Duplicate set for seamless scroll */}
-                <div className="min-w-[300px] h-[450px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
+                <div className="min-w-[240px] h-[360px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-60">
                   <iframe
                     className="w-full h-full"
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=0&mute=1&loop=1&playlist=dQw4w9WgXcQ"
