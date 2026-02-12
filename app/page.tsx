@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, TrendingUp, Users, Zap, DollarSign, Target, FileVideo, BarChart3 } from "lucide-react";
+import { ArrowRight, TrendingUp, Users, Zap, DollarSign } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -192,45 +192,6 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="py-20 px-6 bg-gray-900/50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">How it works</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { 
-                icon: Target, 
-                title: "Create a campaign", 
-                desc: "Set your budget, CPM, and guidelines. Launch in minutes." 
-              },
-              { 
-                icon: FileVideo, 
-                title: "Creators submit clips", 
-                desc: "Creators browse and submit clips that match your brand." 
-              },
-              { 
-                icon: BarChart3, 
-                title: "Track & pay", 
-                desc: "We track views and automatically pay creators based on performance." 
-              },
-            ].map((step, i) => {
-              const Icon = step.icon;
-              return (
-                <Card key={i}>
-                  <CardContent className="p-6 text-center">
-                    <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <Icon className="w-6 h-6 text-purple-400" />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                    <p className="text-gray-400">{step.desc}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
           </div>
         </div>
       </section>
