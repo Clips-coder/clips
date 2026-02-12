@@ -51,87 +51,70 @@ export default function LandingPage() {
       {/* Video Slider */}
       <section className="pt-8 pb-8 px-6">
         <div className="w-full flex justify-center">
-          <div className="w-[280px] overflow-hidden relative">
+          <div className="w-[520px] overflow-hidden relative">
               {/* Fade gradients on sides */}
-              <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
-              <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-gray-950 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-950 to-transparent z-10 pointer-events-none"></div>
               
-              <div className="flex gap-3 animate-scroll-right">
+              <div className="flex gap-4 animate-scroll-right">
                 {/* Video 1 - Partially visible left with fade */}
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
+                <div className="min-w-[200px] h-[300px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-90">
                   <img
-                    src="https://picsum.photos/160/240?random=1"
+                    src="https://picsum.photos/200/300?random=1"
                     alt="Video 1"
-                    className="w-full h-full object-cover grayscale-[0.3]"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-950/60 to-transparent pointer-events-none"></div>
-                  <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-950/95 to-transparent pointer-events-none"></div>
                 </div>
 
-                {/* Video 2 - Fully visible */}
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
+                {/* Video 2 - Fully visible center */}
+                <div className="min-w-[200px] h-[300px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <img
-                    src="https://picsum.photos/160/240?random=2"
+                    src="https://picsum.photos/200/300?random=2"
                     alt="Video 2"
                     className="w-full h-full object-cover"
                   />
                 </div>
 
-                {/* Video 3 - Fully visible */}
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
+                {/* Video 3 - Partially visible right with fade */}
+                <div className="min-w-[200px] h-[300px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-90">
                   <img
-                    src="https://picsum.photos/160/240?random=3"
+                    src="https://picsum.photos/200/300?random=3"
                     alt="Video 3"
                     className="w-full h-full object-cover"
                   />
-                </div>
-
-                {/* Video 4 - Partially visible right with fade */}
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
-                  <img
-                    src="https://picsum.photos/160/240?random=4"
-                    alt="Video 4"
-                    className="w-full h-full object-cover grayscale-[0.3]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-l from-gray-950/60 to-transparent pointer-events-none"></div>
-                  <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-l from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-950/95 to-transparent pointer-events-none"></div>
                 </div>
 
                 {/* Duplicate set for seamless scroll */}
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
+                <div className="min-w-[200px] h-[300px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-90">
                   <img
-                    src="https://picsum.photos/160/240?random=1"
+                    src="https://picsum.photos/200/300?random=1"
                     alt="Video 1"
-                    className="w-full h-full object-cover grayscale-[0.3]"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-gray-950/60 to-transparent pointer-events-none"></div>
-                  <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-950/95 to-transparent pointer-events-none"></div>
                 </div>
 
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
+                <div className="min-w-[200px] h-[300px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
                   <img
-                    src="https://picsum.photos/160/240?random=2"
+                    src="https://picsum.photos/200/300?random=2"
                     alt="Video 2"
                     className="w-full h-full object-cover"
                   />
                 </div>
 
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
+                <div className="min-w-[200px] h-[300px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-90">
                   <img
-                    src="https://picsum.photos/160/240?random=3"
+                    src="https://picsum.photos/200/300?random=3"
                     alt="Video 3"
                     className="w-full h-full object-cover"
                   />
-                </div>
-
-                <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
-                  <img
-                    src="https://picsum.photos/160/240?random=4"
-                    alt="Video 4"
-                    className="w-full h-full object-cover grayscale-[0.3]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-l from-gray-950/60 to-transparent pointer-events-none"></div>
-                  <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-l from-gray-950/90 to-transparent pointer-events-none"></div>
+                  <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-950/95 to-transparent pointer-events-none"></div>
                 </div>
               </div>
             </div>
@@ -141,9 +124,9 @@ export default function LandingPage() {
       {/* Trusted by the best - Logo Slider */}
       <section className="pt-8 pb-20 px-6 bg-gray-950">
         <div className="w-full flex justify-center">
-          <div className="w-[280px] overflow-hidden">
+          <div className="w-[520px] overflow-hidden">
             <h2 className="text-center text-gray-400 text-sm mb-10">Trusted by the best</h2>
-            <div className="flex gap-12 items-center animate-scroll-logos">
+            <div className="flex gap-16 items-center animate-scroll-logos">
               {/* Logo 1 */}
               <div className="flex-shrink-0 text-gray-400 text-sm font-semibold whitespace-nowrap">COLUMBIA</div>
               
