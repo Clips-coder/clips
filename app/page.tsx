@@ -59,93 +59,77 @@ export default function LandingPage() {
               <div className="flex gap-3 animate-scroll-right">
                 {/* Video 1 - Partially visible left with fade */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
-                  <iframe
-                    className="w-full h-full grayscale-[0.3]"
-                    src="https://www.youtube.com/embed/0J2QdDbelmY?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-1.jpg"
+                    alt="Video 1"
+                    className="w-full h-full object-cover grayscale-[0.3]"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-950/60 to-transparent pointer-events-none"></div>
                   <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-950/90 to-transparent pointer-events-none"></div>
                 </div>
 
                 {/* Video 2 - Fully visible */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-2.jpg"
+                    alt="Video 2"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Video 3 - Fully visible */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/jfKfPfyJRdk?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 3"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-3.jpg"
+                    alt="Video 3"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Video 4 - Partially visible right with fade */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
-                  <iframe
-                    className="w-full h-full grayscale-[0.3]"
-                    src="https://www.youtube.com/embed/lP26UCnoH9s?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 4"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-4.jpg"
+                    alt="Video 4"
+                    className="w-full h-full object-cover grayscale-[0.3]"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-l from-gray-950/60 to-transparent pointer-events-none"></div>
                   <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-950/90 to-transparent pointer-events-none"></div>
                 </div>
 
                 {/* Duplicate set for seamless scroll */}
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
-                  <iframe
-                    className="w-full h-full grayscale-[0.3]"
-                    src="https://www.youtube.com/embed/0J2QdDbelmY?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-1.jpg"
+                    alt="Video 1"
+                    className="w-full h-full object-cover grayscale-[0.3]"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-r from-gray-950/60 to-transparent pointer-events-none"></div>
                   <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-gray-950/90 to-transparent pointer-events-none"></div>
                 </div>
 
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-2.jpg"
+                    alt="Video 2"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative shadow-xl">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/jfKfPfyJRdk?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 3"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-3.jpg"
+                    alt="Video 3"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <div className="min-w-[160px] h-[240px] rounded-xl overflow-hidden flex-shrink-0 relative opacity-70">
-                  <iframe
-                    className="w-full h-full grayscale-[0.3]"
-                    src="https://www.youtube.com/embed/lP26UCnoH9s?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&mute=1&loop=1"
-                    title="Video 4"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                  <img
+                    src="/placeholder-video-4.jpg"
+                    alt="Video 4"
+                    className="w-full h-full object-cover grayscale-[0.3]"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-l from-gray-950/60 to-transparent pointer-events-none"></div>
                   <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-gray-950/90 to-transparent pointer-events-none"></div>
                 </div>
