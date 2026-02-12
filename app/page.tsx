@@ -144,7 +144,6 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Trusted by the best - Logo Slider */}
